@@ -38,4 +38,4 @@ class TopController < ApplicationController
     session.delete(:login_uid)
     redirect_to root_path
   end
-en
+end
