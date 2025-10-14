@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>メイン</title>
+  </head>
+  <body>
+    <h1>ログイン成功</h1>
+    <p><%= session[:login_uid] %> さん、ようこそ！</p>
+
+    <%= link_to "ログアウト", top_logout_path, data: { turbo_method: :delete } %>
+  </body>
+</html>

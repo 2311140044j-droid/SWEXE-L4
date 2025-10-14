@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ログイン</title>
+  </head>
+  <body>
+    <h1>ログインページ</h1>
+    <%= form_with url: top_login_path, method: :post do %>
+      <p>ID: <%= text_field_tag :uid %></p>
+      <p>パスワード: <%= password_field_tag :pass %></p>
+      <p><%= submit_tag "ログイン" %></p>
+    <% end %>
+  </body>
+</html>
